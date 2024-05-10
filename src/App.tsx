@@ -1,13 +1,9 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material';
 
 function App() {
   return (
     <div className="py-8 h-screen w-screen flex justify-center">
       <div className="flex-col space-y-4">
-
         <Card sx={{ maxWidth: 345 }}>
           <CardActionArea>
             <CardMedia
