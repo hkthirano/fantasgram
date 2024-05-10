@@ -1,9 +1,20 @@
-import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material';
+import { AppBar, Box, Card, CardActionArea, CardContent, CardMedia, IconButton, Toolbar, Typography } from '@mui/material';
 
 function App() {
   return (
-    <div className="py-8 h-screen w-screen flex justify-center">
-      <div className="flex-col space-y-4">
+    <div className="h-screen w-screen flex justify-center">
+      <div className="flex-col space-y-2">
+        <Box sx={{ flexGrow: 1 }}>
+          <AppBar position="static">
+            <Toolbar className='flex space-x-2'>
+              <img src="logo.svg" className="w-8" />
+              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                Fantasgram
+              </Typography>
+            </Toolbar>
+          </AppBar>
+        </Box>
+
         <Card sx={{ maxWidth: 345 }}>
           <CardActionArea>
             <CardMedia
